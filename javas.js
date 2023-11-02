@@ -106,10 +106,7 @@ function chechGameOver(){
             ywinning++;
             score();
         }
-        else{
-            tiematch++;
-            score();
-        }
+        
     return; 
      }
      // let's  check here there is a winnner or not
@@ -122,6 +119,8 @@ function chechGameOver(){
      if( fullcount === 9){
         gameInfo.innerHTML = "Game Tie !";
         newGameBtn.classList.add("active");
+        tiematch++;
+        score();
      }
 
 }
