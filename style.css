@@ -1,0 +1,113 @@
+* , *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 'poppins' , 'sans-serif';
+}
+.wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(./assets/gradient-bg.jpg); */
+    background-color: black;
+    display: grid;
+    place-items: center;
+    /* grid-gap: 9rem; */
+}
+.game-info{
+    all:unset;
+    position: absolute;
+    font-size: 1.3rem;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}   
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+}
+.box{   
+    position: relative;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-size: 3rem;
+    display: grid;
+    aspect-ratio: 1/1;
+    place-items: center;
+    
+}
+.box:hover{
+    background: rgba(242, 235, 235, 0.1);
+}
+.box1, .box2, .box4, .box5{
+    border-bottom-right-radius: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    
+}
+.box3, .box6{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.box7, .box8{
+    border-right: 2px solid rgb(255, 255, 255);
+} 
+
+.btn{
+    all:unset;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0.7rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+
+}
+.btn.active{
+    display: flex;
+}
+.win{
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.match-info{
+    /* position: absolute; */
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 19px;  
+    border-radius:0.5rem;
+    margin-top: -15rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
