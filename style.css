@@ -17,7 +17,7 @@
 .game-info{
     all:unset;
     position: absolute;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     top: 3rem;
     left: 50%;
     transform: translateX(-50%);
@@ -74,7 +74,7 @@
     padding: 0.7rem 2rem;
     border-radius: 1rem;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: white;
     position: absolute;
     bottom: 3rem;
@@ -92,14 +92,14 @@
 
 .match-info{
     /* position: absolute; */
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: white;
     background-color: rgba(255, 255, 255, 0.2);
     padding: 1rem 2rem;
     display: flex;
     gap: 19px;  
     border-radius:0.5rem;
-    margin-top: -15rem;
+    margin-top: -14rem;
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
